@@ -1,4 +1,4 @@
-AWS_ACCOUNT_ID = 556988803790
+AWS_ACCOUNT_ID = 
 REGION = us-east-1
 IMAGE_NAME = ts-express-server
 ECR_REPO = $(AWS_ACCOUNT_ID).dkr.ecr.$(REGION).amazonaws.com/$(IMAGE_NAME)
