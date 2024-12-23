@@ -12,7 +12,19 @@ Simple TypeScript and Express demo app with an HTTP Server with 2 endpoints:
 #### Local Run
 
 ```
+npm install
 make local
+```
+
+Check it works:
+
+```
+curl -vv http://localhost:8080/health
+
+200 - OK
+
+{"status":"ok"}%
+
 ```
 
 #### Test
@@ -29,6 +41,7 @@ Pre-requisite:
 
 - Configured AWS CLI with a user with admin permission
 - Create an ECR Repo for the new image https://github.com/afavre/pulumi-aws-fargate
+- Update the Makefile with your AWS_ACCOUNT_ID
 
 Steps:
 
